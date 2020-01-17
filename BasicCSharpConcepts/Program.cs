@@ -373,7 +373,14 @@ namespace BasicCSharpConcepts
             // NOT !
 
 
+            Console.WriteLine("New Update on code");
 
+
+            int firstNumber = 10;
+            int secondNumber = 20;
+
+
+            Console.WriteLine(firstNumber + secondNumber);
 
 
 
