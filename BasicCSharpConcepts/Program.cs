@@ -218,77 +218,164 @@ namespace BasicCSharpConcepts
 
             // Conditional Statement 
             // if statement | if else statement | if else if statement | nested if statement
-          /*
-            int firstNumber = 10;
-            int secondNumber = 11;
+            /*
+              int firstNumber = 10;
+              int secondNumber = 11;
 
 
-            if(firstNumber > secondNumber)
-                Console.WriteLine("First Number is greater");
-            else 
-                Console.WriteLine("Second Number is greater");
-*/
-            // Logical Operators 
+              if(firstNumber > secondNumber)
+                  Console.WriteLine("First Number is greater");
+              else 
+                  Console.WriteLine("Second Number is greater");
 
-            int ali = 150;
-            int taimoor = 350;
-            int imran = 270;
+              // Logical Operators 
 
-            // Ali =1 done ? taimoor = 1? 
+              int ali = 150;
+              int taimoor = 350;
+              int imran = 270;
 
-            // Find out First, second and third position holder
-            if(ali > taimoor)
+              // Ali =1 done ? taimoor = 1? 
+
+              // Find out First, second and third position holder
+              if(ali > taimoor)
+              {
+                  if(ali > imran)
+                  {
+                      Console.WriteLine("Ali is at first position.");
+                      if (taimoor > imran)
+                      {
+                          Console.WriteLine("Taimoor is at Second Position.");
+                          Console.WriteLine("Imran is at Third Position.");
+                      }
+                      else
+                      {
+                          Console.WriteLine("Imran is at Second position.");
+                          Console.WriteLine("Taimoor is at Third Position.");
+                      }
+                  }
+              }
+              else if(taimoor > ali)
+              {
+                  if(taimoor > imran)
+                  {
+                      Console.WriteLine("Taimoor is at First Position.");
+
+                      if(imran > ali)
+                      {
+                          Console.WriteLine("Imran is at second position.");
+                          Console.WriteLine("Ali is at third position.");
+                      }
+                      else
+                      {
+                          Console.WriteLine("Ali is at second position");
+                          Console.WriteLine("Imran is at third position.");
+                      }
+                  }
+              }
+              else
+              {
+                  Console.WriteLine("Imran is at first position.");
+
+                  if(taimoor > ali)
+                  {
+                      Console.WriteLine("Taimoor is at second position");
+                      Console.WriteLine("Ali is at third position.");
+                  }
+                  else
+                  {
+                      Console.WriteLine("Ali is at second position");
+                      Console.WriteLine("Taimoor is at third position.");
+                  }
+              }
+              */
+
+
+            // Switch -> Expressions
+
+            string word = "e";
+
+            // Check the given alphabet is vowel or not
+            // vowel => aeiou
+
+            /*
+            if (word != "a" && word != "e" && word != "i" && word != "o" && word != "u")
             {
-                if(ali > imran)
-                {
-                    Console.WriteLine("Ali is at first position.");
-                    if (taimoor > imran)
-                    {
-                        Console.WriteLine("Taimoor is at Second Position.");
-                        Console.WriteLine("Imran is at Third Position.");
-                    }
-                    else
-                    {
-                        Console.WriteLine("Imran is at Second position.");
-                        Console.WriteLine("Taimoor is at Third Position.");
-                    }
-                }
+                Console.WriteLine("Given Word is not Vowel.");
             }
-            else if(taimoor > ali)
-            {
-                if(taimoor > imran)
-                {
-                    Console.WriteLine("Taimoor is at First Position.");
 
-                    if(imran > ali)
-                    {
-                        Console.WriteLine("Imran is at second position.");
-                        Console.WriteLine("Ali is at third position.");
-                    }
-                    else
-                    {
-                        Console.WriteLine("Ali is at second position");
-                        Console.WriteLine("Imran is at third position.");
-                    }
-                }
-            }
-            else
-            {
-                Console.WriteLine("Imran is at first position.");
+            
 
-                if(taimoor > ali)
-                {
-                    Console.WriteLine("Taimoor is at second position");
-                    Console.WriteLine("Ali is at third position.");
-                }
-                else
-                {
-                    Console.WriteLine("Ali is at second position");
-                    Console.WriteLine("Taimoor is at third position.");
-                }
+            switch (word)
+            {
+                case "a":
+                case "e":
+                case "i":
+                case "o":
+                case "u":
+                    Console.WriteLine("Given word is vowel.");
+                    break;
+
+                default:
+                    Console.WriteLine("Given word is not vowel.");
+                    break;
             }
             
-    
+
+            int firstNumber = 10;
+            int secondNumber = 20;
+
+            decimal result = 0.0m;
+           
+            int opp = 1; // + - * / % 
+
+            // int operator 1 = +, 2 = -, 3 = *......
+
+            switch (opp)
+            {
+                case 1:
+                    result = firstNumber + secondNumber;
+                    Console.WriteLine(result);
+                    break;
+                case 2:
+                    result = firstNumber - secondNumber;
+                    Console.WriteLine(result);
+                    break;
+                case 3:
+                    result = firstNumber * secondNumber;
+                    Console.WriteLine(result);
+                    break;
+                case 4:
+                    result = firstNumber / secondNumber;
+                    Console.WriteLine(result);
+                    break;
+                case 5:
+                    result = firstNumber % secondNumber;
+                    Console.WriteLine(result);
+                    break;
+
+
+                default:
+                    break;
+            }
+
+            */
+
+
+
+            // Opeartors | Conditional Statements | Iterations | Debugging | Exceptional Handling | Try Catch
+            // Concatenation | Format String | Operators | Order Presedence| Conditional Statements | Iterations | Debugging | Exceptional Handling | Try Catch
+
+            // Operators
+            // Logical Operators , Conditional Operators, Relational Operator, Arithmetic Operators, Increment / Decrement Operators
+            // Logical Operators AND OR NOT  
+            // AND && 
+            // OR ||
+            // NOT !
+
+
+
+
+
 
             Console.ReadKey();
          }
