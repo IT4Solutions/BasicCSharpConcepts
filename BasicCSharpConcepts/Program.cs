@@ -373,14 +373,49 @@ namespace BasicCSharpConcepts
             // NOT !
 
 
-            Console.WriteLine("New Update on code");
 
 
-            int firstNumber = 10;
-            int secondNumber = 20;
+
+            /*
+
+            int firstNumber;
+            int secondNumber;
 
 
-            Console.WriteLine(firstNumber + secondNumber);
+            Console.WriteLine("Please enter First Number :");
+            firstNumber = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Please enter Second Number");
+            secondNumber = Convert.ToInt32(Console.ReadLine());
+
+
+            Console.WriteLine("This is the sum of two number : " + (firstNumber + secondNumber));
+
+    */
+
+            string fullName;
+            int ageInYears;
+            string fatherName = "Muhammad Yasin";
+            string education = "MCS";
+            string address = "Sector F/1 Mirpur Azad Kashmir";
+
+            Console.WriteLine("Please enter your full name?");
+            fullName = Console.ReadLine();
+
+            Console.WriteLine("Please enter your age in years?");
+            ageInYears = Convert.ToInt32(Console.ReadLine());
+
+            // Your full name is Taimoor Hayat and You are 28 years old.
+
+            // Concatenation Example
+           // Console.WriteLine("Your Full Name is " + fullName + " and You are " + ageInYears + " years old");
+
+            // Format Strings
+
+            Console.WriteLine("Your Full Name is {0} and Father Name is {1}. You are {2} years old. You have successfully completed your {3} and your address is {4}",fullName, fatherName, ageInYears, education, address);
+
+
+
 
 
 
