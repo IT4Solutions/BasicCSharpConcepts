@@ -95,8 +95,6 @@ namespace BasicCSharpConcepts
             // Calculation
             Console.WriteLine(_firstNumber + _secondNumber);
 
-            // Opeartors | Conditional Statements | Iterations | Debugging | Exceptional Handling | Try Catch
-
             int daysInMonth = 30;
             string daysinString = daysInMonth.ToString();
 
@@ -112,12 +110,7 @@ namespace BasicCSharpConcepts
 
             // True / False or 1/0
             bool isavaille = Convert.ToBoolean(number);
-             */
-
-
-
-
-            /*
+             
 
             if(isavaille)
                 Console.WriteLine(isavaille);
@@ -142,20 +135,160 @@ namespace BasicCSharpConcepts
             {
                 Console.WriteLine("Conversion Failed.");
             }
-            */
-
-
-
+           
 
             int totalMarks = 100;
             int obtainedMarks = 73;
 
             decimal percentage = Convert.ToDecimal(totalMarks * obtainedMarks / 32.60);
-
-
             Console.WriteLine(decimal.Round(percentage,3));
+             
+
+            // Identation
+
+            int firstNumber = 10;
+            int secondNumber = 20;
+
+            if(firstNumber > secondNumber)
+            {
+                if(secondNumber == firstNumber)
+                {
+                    switch(firstNumber)
+                    {
+                        case 1:
+                            Console.WriteLine(firstNumber);
+                            Console.WriteLine(secondNumber);
+                            Console.WriteLine("Sum of Two Numbers");
+                            break;
+                        case 2:
+                            Console.WriteLine(secondNumber);
+                            break;
+                        default:
+                            Console.WriteLine("Wrong Input");
+                            break;
+                    }
+                }
+                else
+                {
+                    
+                }
+            }
+
+            */
+
+            // Opeartors | Conditional Statements | Iterations | Debugging | Exceptional Handling | Try Catch
+            // Concatenation | Format String | Operators | Order Presedence| Conditional Statements | Iterations | Debugging | Exceptional Handling | Try Catch
+
+            // Operators
+            // Logical Operators , Conditional Operators, Relational Operator, Arithmetic Operators, Increment / Decrement Operators
+            // Logical Operators AND OR NOT  
+            // AND && 
+            // OR ||
+            // NOT !
+
+            // Conditional Operators | Ternary Operator
+            //  short form of if statement bool iseligible = (age > 18) ? true :  false;
+
+            // Relational Operators
+            // Greater than | Less Than | 
+            // > | < | >= | <= | ==(equality operator)
+            // = Assignment Operator int marks = 10;
+            // == Equality Operator  bool isEqual = (8 <= 9) ? true : false;
+            // = or ==
+
+            // + - * / % 26 % 5  26/5 = 
+
+            // ++ increment -- decrement
+
+            /*
+            int number = 10;
+
+            // ++number pre-increment | number++ post-increment
+            Console.WriteLine(number++);
+
+            Console.WriteLine(number);
+
+   
+            int secondNumber = 25;
+
+            Console.WriteLine(secondNumber--);
+            Console.WriteLine(secondNumber);
+
+     */
+
+            // Conditional Statement 
+            // if statement | if else statement | if else if statement | nested if statement
+          /*
+            int firstNumber = 10;
+            int secondNumber = 11;
 
 
+            if(firstNumber > secondNumber)
+                Console.WriteLine("First Number is greater");
+            else 
+                Console.WriteLine("Second Number is greater");
+*/
+            // Logical Operators 
+
+            int ali = 150;
+            int taimoor = 350;
+            int imran = 270;
+
+            // Ali =1 done ? taimoor = 1? 
+
+            // Find out First, second and third position holder
+            if(ali > taimoor)
+            {
+                if(ali > imran)
+                {
+                    Console.WriteLine("Ali is at first position.");
+                    if (taimoor > imran)
+                    {
+                        Console.WriteLine("Taimoor is at Second Position.");
+                        Console.WriteLine("Imran is at Third Position.");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Imran is at Second position.");
+                        Console.WriteLine("Taimoor is at Third Position.");
+                    }
+                }
+            }
+            else if(taimoor > ali)
+            {
+                if(taimoor > imran)
+                {
+                    Console.WriteLine("Taimoor is at First Position.");
+
+                    if(imran > ali)
+                    {
+                        Console.WriteLine("Imran is at second position.");
+                        Console.WriteLine("Ali is at third position.");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Ali is at second position");
+                        Console.WriteLine("Imran is at third position.");
+                    }
+                }
+            }
+            else
+            {
+                Console.WriteLine("Imran is at first position.");
+
+                if(taimoor > ali)
+                {
+                    Console.WriteLine("Taimoor is at second position");
+                    Console.WriteLine("Ali is at third position.");
+                }
+                else
+                {
+                    Console.WriteLine("Ali is at second position");
+                    Console.WriteLine("Taimoor is at third position.");
+                }
+            }
+            
+    
 
             Console.ReadKey();
          }
