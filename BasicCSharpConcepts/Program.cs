@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -362,8 +363,8 @@ namespace BasicCSharpConcepts
 
 
 
-            // Opeartors | Conditional Statements | Iterations | Debugging | Exceptional Handling | Try Catch
-            // Concatenation | Format String | Operators | Order Presedence| Conditional Statements | Iterations | Debugging | Exceptional Handling | Try Catch
+            // Opeartors | Conditional Statements | Iterations | Debugging | Exceptional Handling  Try Catch
+            // Concatenation | Format String | Operators | Order Presedence | Iterations | Debugging | Exceptional Handling | Try Catch
 
             // Operators
             // Logical Operators , Conditional Operators, Relational Operator, Arithmetic Operators, Increment / Decrement Operators
@@ -371,9 +372,6 @@ namespace BasicCSharpConcepts
             // AND && 
             // OR ||
             // NOT !
-
-
-
 
 
             /*
@@ -391,7 +389,7 @@ namespace BasicCSharpConcepts
 
             Console.WriteLine("This is the sum of two number : " + (firstNumber + secondNumber));
 
-    */
+  
 
             string fullName;
             int ageInYears;
@@ -414,9 +412,129 @@ namespace BasicCSharpConcepts
 
             Console.WriteLine("Your Full Name is {0} and Father Name is {1}. You are {2} years old. You have successfully completed your {3} and your address is {4}",fullName, fatherName, ageInYears, education, address);
 
+      */
+
+
+            //Console.WriteLine(((6+3)*(5+3)));
+
+
+            // Loops (For, Do While, While, (Foreach))
+
+            // init     condition  increment / decrement
+
+            //Write a program for table writer 
+            // input : number  2
+            // input : range  20
+
+            // 2   *   1 = 2
+            /*
+              
+
+              2   *    20 = 40
+             
+
+            int number;
+            int count;
+            Console.WriteLine("Please enter a number to find table?\n");
+            number = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Please enter a range for table?\n");
+            count = Convert.ToInt32(Console.ReadLine());
+
+            for (int i = 1; i <= count; i++)
+            {
+                Console.WriteLine("{0}   x   {1}   =  {2}",number,i,number * i);
+            }
 
 
 
+            Console.WriteLine("Please enter a number to find table?\n");
+            number = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Please enter a range for table?\n");
+            count = Convert.ToInt32(Console.ReadLine());
+
+            int j = 1;
+
+            while(j<=count)
+            {
+                Console.WriteLine("{0}   x   {1}   =  {2}", number, j, number * j);
+
+                j = j + 1;
+            }
+
+            j = 1;
+            do
+            {
+                Console.WriteLine("{0}   x   {1}   =  {2}", number, j, number * j);
+
+                j = j + 1;
+
+            } while (j <= count);
+           
+
+
+            try
+            {
+                int firstNumber;
+                int secondNumber;
+
+                Console.WriteLine("Please enter first Number : ");
+                firstNumber = Convert.ToInt32(Console.ReadLine());
+
+                Console.WriteLine("Please enter first Number : ");
+                secondNumber = Convert.ToInt32(Console.ReadLine());
+
+                Console.WriteLine("Sum of two numbers is {0}", firstNumber + secondNumber);
+
+                ///
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error occurs in your program. Check error details below: \n{0}\n. Sample input is 12345.",ex.Message);
+            }
+            finally
+            {
+                Console.WriteLine("Finally block.");
+                //
+            }
+
+     */
+
+            int Raouf, Ali, Zeeshan, Imran, Ahmad;
+
+            Raouf = 10;
+            Ali = 20;
+            Zeeshan = 25;
+            Imran = 15;
+            Ahmad = 12;
+
+
+            // First Position
+            if(Raouf > Ali && Raouf > Zeeshan && Raouf > Imran && Raouf > Ahmad)
+            {
+                Console.WriteLine("Raouf is at first position");
+
+                // Second Position
+                if(Ali > Zeeshan && Ali > Imran && Ali > Ahmad)
+                {
+                    Console.WriteLine("Raouf is at first position");
+                    // 3rd, 4th fifith
+                }
+                else if(Zeeshan > Ali && Zeeshan > Imran && Zeeshan > Ahmad)
+                {
+                    Console.WriteLine("Raouf is at first position");
+                    // 3rd, 4th fifith
+                }
+                else if(Imran > Ali && Imran > Ahmad)
+                {
+                    Console.WriteLine("Raouf is at first position");
+                    // 3rd, 4th fifith
+                }
+                else
+                {
+                    Console.WriteLine("Ahmad is at second position.");
+                    // 3rd, 4th fifith
+                }
+            }
 
 
             Console.ReadKey();
