@@ -716,6 +716,14 @@ namespace BasicCSharpConcepts
 
             _customers.Add(cm);
 
+            foreach (var customer in _customers)
+            {
+                Console.WriteLine(customer.CustomerName);
+                Console.WriteLine(customer.Address);
+                Console.WriteLine(customer.Balance);
+                Console.WriteLine(customer.IsCreditCustomer);
+            }
+
             Console.ReadKey();
          }
     }
