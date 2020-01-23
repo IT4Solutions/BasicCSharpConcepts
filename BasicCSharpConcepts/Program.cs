@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BasicCSharpConcepts.Model;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -497,7 +498,6 @@ namespace BasicCSharpConcepts
                 //
             }
 
-     */
 
             int Raouf, Ali, Zeeshan, Imran, Ahmad;
 
@@ -516,7 +516,20 @@ namespace BasicCSharpConcepts
                 // Second Position
                 if(Ali > Zeeshan && Ali > Imran && Ali > Ahmad)
                 {
-                    Console.WriteLine("Raouf is at first position");
+                    Console.WriteLine("Ali is at second position");
+
+                    if(Zeeshan > Imran && Zeeshan > Ahmad)
+                    {
+                        Console.WriteLine("Zeeshan is at third position.");
+                    }
+                    else if (Imran > Zeeshan && Imran > Ahmad)
+                    {
+                        Console.WriteLine("Imran is at third position.");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Ahmad is at third position.");
+                    }
                     // 3rd, 4th fifith
                 }
                 else if(Zeeshan > Ali && Zeeshan > Imran && Zeeshan > Ahmad)
@@ -536,8 +549,175 @@ namespace BasicCSharpConcepts
                 }
             }
 
+           
+
+            int[] salesIncome = new int[50];
+
+            Console.WriteLine("Please enter five sales income.");
+            salesIncome[0] = Convert.ToInt32(Console.ReadLine());
+            salesIncome[1] = Convert.ToInt32(Console.ReadLine());
+            salesIncome[2] = Convert.ToInt32(Console.ReadLine());
+            salesIncome[3] = Convert.ToInt32(Console.ReadLine());
+            salesIncome[4] = Convert.ToInt32(Console.ReadLine());
+
+
+            int totalSales = salesIncome[0] + salesIncome[1] + salesIncome[2] + salesIncome[3] + salesIncome[4];
+
+            Console.WriteLine("Total Sales income is : {0}", totalSales);
+           
+
+            Console.WriteLine("How many sales do you want to store ? ");
+            int count = Convert.ToInt32(Console.ReadLine());
+
+            int[] salesIncome = new int[count];
+            int totalSales = 0;
+
+            Console.WriteLine("Please enter five sales income.");
+
+            for (int i = 0; i < salesIncome.Count(); i++)
+                salesIncome[i] = Convert.ToInt32(Console.ReadLine());
+
+
+            for (int i = 0; i < salesIncome.Count(); i++)
+                totalSales = totalSales + salesIncome[i];
+
+
+
+            Console.WriteLine("Total Sales income is : {0}", totalSales);
+
+  
+            int[] marks = { 350, 200, 150, 550, 600 };
+
+            // Minimum
+
+            int min = marks[0];
+
+            for(int i=0; i < marks.Count(); i++)
+            {
+                if(marks[i] < min)
+                {
+                    min = marks[i];
+                }
+            }
+
+   
+
+            string[] students = { "Raouf", "Ahmad", "Ali", "Zeeshan", "Abid", "Taimoor", "Raza" };
+
+            Console.WriteLine("Please enter a student to find.");
+            string searchName = Console.ReadLine();
+
+            if(students.Contains(searchName))
+            {
+                Console.WriteLine("Student is available in the list.");
+            }
+            else
+            {
+                Console.WriteLine("Student is not available in the list.");
+            }
+            
+
+            string[] students = { "Raouf", "Ahmad", "Ali", "Zeeshan", "Abid", "Taimoor", "Raza" };
+
+            Console.WriteLine("Please enter a student to find.");
+            string searchName = Console.ReadLine();
+
+            for(int i=0; i<students.Count(); i++)
+            {
+                if(students[i] == searchName)
+                {
+                    Console.WriteLine("Student is availble in the list.");
+                    break;
+                }
+            }
+
+           */
+
+            List<int> numbers = new List<int>();
+
+            numbers.Add(12);
+            numbers.Add(56);
+            numbers.Add(43);
+
+            numbers.Remove(43); // specific item
+
+            numbers.RemoveAt(1); // remove by index
+
+
+            numbers.Max();
+            numbers.Min();
+
+            List<string> employees = new List<string>();
+            employees.Add("Ahmad");
+            employees.Add("Raouf");
+            employees.Add("Ali");
+            employees.Add("Adil");
+            employees.Add("Abdullah");
+
+            employees.Remove("Abdullah");
+            employees.RemoveAt(2);
+
+            List<int> rollNumbers = new List<int>();
+
+            int[] studentsEnrolled = new int[] {12,56,45,35,45,78,63,78 };
+
+            rollNumbers.AddRange(studentsEnrolled);
+
+            List<string> customers = new List<string>();
+            customers.Add("Muhammad Ahmed");
+            customers.Add("Mujtaba Ahmed");
+
+            List<string> suppliers = new List<string>();
+            suppliers.Add("Muhammad Abdullah");
+            suppliers.Add("Muhammad Husnain");
+
+            customers.AddRange(suppliers);
+
+            for(int i = 0; i< customers.Count; i++)
+            {
+                if(customers[i] == "Muhammad Ali")
+                    Console.WriteLine(customers[i]);
+            }
+
+            foreach (string customerName in customers)
+            {
+                Console.WriteLine(customerName);
+            }
+
+
+            List<Customer> _customers = new List<Customer>();
+
+
+            Customer cm = new Customer();
+
+            cm.CustomerID = 1;
+            cm.CustomerName = "Muhammad Ali";
+            cm.Address = "A1 Sattelite Town Rawalpindi";
+            cm.Balance = 15000.00m;
+            cm.IsCreditCustomer = true;
+
+            _customers.Add(cm);
+
+            cm.CustomerID = 2;
+
+            cm.CustomerName = "Muhammad Ali";
+            cm.Address = "A1 Sattelite Town Rawalpindi";
+            cm.Balance = 15000.00m;
+            cm.IsCreditCustomer = true;
+
+            _customers.Add(cm);
+
+            cm.CustomerID = 3;
+            cm.CustomerName = "Muhammad Ali";
+            cm.Address = "A1 Sattelite Town Rawalpindi";
+            cm.Balance = 15000.00m;
+
+            cm.IsCreditCustomer = true;
+
+            _customers.Add(cm);
 
             Console.ReadKey();
          }
     }
 }
+
