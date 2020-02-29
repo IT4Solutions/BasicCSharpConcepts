@@ -12,8 +12,10 @@ namespace BasicCSharpConcepts
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Raouf Yasin Text");
-            Console.WriteLine("Good Testing by Raouf");
+            Console.Write("testing here");
+
+            Console.Write("testing here 123");
+
             /*
             // Variables and Data Types
             // How to declare variables
@@ -686,7 +688,7 @@ namespace BasicCSharpConcepts
                 Console.WriteLine(customerName);
             }
 
-   
+
             List<Customer> _customers = new List<Customer>();
 
 
@@ -724,24 +726,9 @@ namespace BasicCSharpConcepts
                 Console.WriteLine(customer.Address);
                 Console.WriteLine(customer.Balance);
                 Console.WriteLine(customer.IsCreditCustomer);
-                
             }
 
             */
-
-            // Object 
-            Customer ctr = new Customer();
-            ctr.GetandDisplayCustomer(45, "Raouf Yasin");
-
-
-            Console.WriteLine("Connection Sting is : {0}",Customer.ConnectionString());
-
-
-            Console.WriteLine("Returned Customer id {0}",ctr.GetCustomerID());
-
-
-
-
             Console.ReadKey();
          }
     }
