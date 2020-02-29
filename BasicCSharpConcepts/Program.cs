@@ -18,6 +18,8 @@ namespace BasicCSharpConcepts
 
 
             Console.WriteLine("Raouf Yasin Testing");
+
+            Console.Write("fINAL sync tesing");
             /*
             // Variables and Data Types
             // How to declare variables
