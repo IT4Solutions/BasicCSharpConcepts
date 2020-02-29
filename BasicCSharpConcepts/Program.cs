@@ -13,6 +13,9 @@ namespace BasicCSharpConcepts
         static void Main(string[] args)
         {
             Console.Write("testing here");
+
+            Console.Write("testing here 123");
+
             /*
             // Variables and Data Types
             // How to declare variables
